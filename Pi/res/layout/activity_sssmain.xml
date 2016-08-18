@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:id="@+id/scroll1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/relative"
+        android:fillViewport="true">    
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">    
+            <EditText
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:focusable="false" 
+                android:gravity="top|left"/>
+		</LinearLayout>
+     </ScrollView>
+        <RelativeLayout 
+            android:id="@+id/relative"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true">    
+             <EditText
+                android:id="@+id/writeboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"/>
+			<requestFocus />
+			
+			<Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writeboard"
+                android:text="Send" />
+
+            <Button
+                android:id="@+id/btnselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writeboard"
+                android:layout_alignBaseline="@+id/btnsubmit"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tick" />
+            
+            <Button
+                android:id="@+id/btnclear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writeboard"
+                android:layout_toRightOf="@+id/btnsubmit"
+                android:text="Clear" />
+            
+        </RelativeLayout>
+    
+   
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="My Circle"
+        android:textColor="#000000"
+        android:textSize="@dimen/all_title_text_size" />
+
+    <ListView
+        android:id="@+id/circleList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/borderLayout"
+        android:layout_below="@+id/textView51"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/borderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabnar2"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/invitimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Invite" />
+
+<!--         <Button -->
+<!--             android:id="@+id/myrequestButton" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="@null" -->
+<!--             android:text="My Request" /> -->
+
+        <Button
+            android:id="@+id/acceptImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Accept" />
+    </LinearLayout>
+
+</RelativeLayout>

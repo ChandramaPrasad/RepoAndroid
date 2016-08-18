@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <!-- Release Year -->
+
+        <LinearLayout
+            android:id="@+id/rqlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rtitles"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <TextView
+                android:id="@+id/rati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Rating "
+                android:textColor="#3C3CFF" />
+
+            <TextView
+                android:id="@+id/rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="r"
+                android:textColor="#3C3CFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="Share"
+                android:textColor="#3C3CFF" />
+
+            <TextView
+                android:id="@+id/abuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="Report abuse"
+                android:textColor="#3C3CFF" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="Archive"
+                android:textColor="#3C3CFF" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rtitles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sare"
+            android:background="#FFFF00" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:text="Question"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/sare"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/profilepic_sml"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main"
+        android:layout_below="@+id/textView200"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="A :"
+            android:textColor="#626161"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/releaseYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/ans"
+            android:text="Answer"
+            android:textColor="#626161"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#A4A4A4" />
+
+    <TextView
+        android:id="@+id/textView200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#A4A4A4" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1s" >
+
+        <TextView
+            android:id="@+id/ratis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Rating "
+            android:textColor="#3C3CFF" />
+
+        <TextView
+            android:id="@+id/rts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ratis"
+            android:text="r"
+            android:textColor="#3C3CFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rts"
+            android:text="Share "
+            android:textColor="#3C3CFF" />
+
+        <TextView
+            android:id="@+id/abuses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textView1s"
+            android:text="Report Abuse"
+            android:textColor="#3C3CFF" />
+
+        <TextView
+            android:id="@+id/textView3s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/abuses"
+            android:text="Archive"
+            android:textColor="#3C3CFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

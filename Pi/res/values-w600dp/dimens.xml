@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- calendar dimention of reminder screen -->
+    <dimen name="calender_year_margin_left_size">70dp</dimen>
+    <dimen name="left_arrow_button_margin_left">50dp</dimen>
+    <dimen name="right_arrow_button_margin_left">80dp</dimen>
+
+</resources>

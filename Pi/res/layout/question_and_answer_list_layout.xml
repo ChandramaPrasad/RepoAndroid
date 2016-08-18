@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/questionRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect" >
+
+        <ImageView
+            android:id="@+id/questionProfilePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profilepic_sml" />
+
+        <RelativeLayout
+            android:id="@+id/questionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/questionProfilePicture" >
+
+            <TextView
+                android:id="@+id/keywordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/key" />
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/keywordTextView"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Question"
+                android:textSize="@dimen/question_and_answer_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rqlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/questionLayout"
+            android:layout_below="@+id/questionLayout"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="Name "
+                android:textColor="#3C3CFF"
+                android:textSize="@dimen/user_name_text_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#006400" >
+            </View>
+
+            <LinearLayout
+                android:id="@+id/questionratingLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/quesratingImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/star"
+                    android:textColor="#3C3CFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ratingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:textColor="#3C3CFF"
+                    android:textSize="@dimen/rating_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewAbuse"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="38dp" />
+
+    <TextView
+        android:id="@+id/idquestionTextView"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/useridTextView"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+</RelativeLayout>

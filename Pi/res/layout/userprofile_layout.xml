@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userprofileback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerRelativeLayout"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="User Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/firstnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="firtname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/lastnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Lastname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/mobilenumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Mobile No"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="city"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/countryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="country"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/qualificationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Qualification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabnar2" >
+
+        <Button
+            android:id="@+id/userprofileokButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="Ok"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

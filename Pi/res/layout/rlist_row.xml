@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+
+
+    <!-- Movie Title -->
+
+
+    <!-- Rating -->
+
+
+    <!-- Genre -->
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect" >
+
+        <!-- Release Year -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Q:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_toRightOf="@+id/genre"
+            android:text="Questions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Q"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/R"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/QU"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/AU"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/RATT"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+</RelativeLayout>

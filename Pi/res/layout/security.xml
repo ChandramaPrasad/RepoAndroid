@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/secid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/mobilenumberRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suname"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textfield_gray" >
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="Change Mobile Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/security_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usernameLinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobilenumberRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textfield_gray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="Change Username"
+            android:textColor="@color/black"
+            android:textSize="@dimen/security_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/changePasswordLineaLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameLinearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textfield_gray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pwds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="Change Passsord"
+            android:textColor="@color/black"
+            android:textSize="@dimen/security_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Security Settings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/all_title_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/suname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textfield_gray" >
+
+        <TextView
+            android:id="@+id/sname"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="Change Email Id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/security_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

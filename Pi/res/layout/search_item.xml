@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Thumbnail Image -->
+
+
+    <!-- Movie Title -->
+
+
+    <!-- Rating -->
+
+
+    <!-- Genre -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_rect"
+        android:orientation="vertical" >
+
+        <!-- Release Year -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/sare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/search_question_and_answer_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textColor="@color/black"
+                android:textSize="@dimen/search_question_and_answer_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/search_question_and_answer_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/releaseYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/search_question_and_answer_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/rqlist" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/main" -->
+    <!-- android:layout_marginTop="10dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/rati" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="18dp" -->
+    <!-- android:text="Rating ." -->
+    <!-- android:textColor="#4C4CD7" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/rt" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/rati" -->
+    <!-- android:text="r" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/textView1" -->
+    <!-- android:layout_width="50dp" -->
+    <!-- android:layout_height="20dp" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_toRightOf="@+id/rt" -->
+    <!-- android:text="Share" -->
+    <!-- android:textColor="#4C4CD7" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/textView2202" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="18dp" -->
+    <!-- android:layout_toRightOf="@+id/textView1" -->
+    <!-- android:text="Report Abuse" -->
+    <!-- android:textColor="#4C4CD7" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/textView3" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="14dp" -->
+    <!-- android:layout_toRightOf="@+id/textView2202" -->
+    <!-- android:text="Archive" -->
+    <!-- android:textColor="#4C4CD7" /> -->
+    <!-- </RelativeLayout> -->
+
+</RelativeLayout>

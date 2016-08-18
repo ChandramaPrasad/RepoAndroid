@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Block/Unblock"
+        android:textColor="#000000"
+        android:textSize="@dimen/all_title_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.8dp"
+        android:layout_alignEnd="@+id/textView56"
+        android:layout_alignLeft="@+id/textView56"
+        android:layout_alignRight="@+id/textView56"
+        android:layout_alignStart="@+id/textView56"
+        android:layout_below="@+id/textView56"
+        android:background="#000000" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/BlockmailImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/blockmail" />
+
+        <ImageView
+            android:id="@+id/blockquestionImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BlockmailImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/blockquestions" />
+    </RelativeLayout>
+
+</RelativeLayout>

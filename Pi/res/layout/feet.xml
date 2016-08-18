@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrolls"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relt4"
+        android:divider="#7d2f09"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp" >
+
+    </ListView>
+
+
+
+</RelativeLayout>

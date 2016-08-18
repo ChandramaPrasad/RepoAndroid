@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_rect" >
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/profilepic_sml" />
+
+        <TextView
+            android:id="@+id/circleNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile"
+            android:text="Name"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/idsourceTextView"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/iddestTextView"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/idfriendsTextView"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

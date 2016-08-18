@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/answerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect" >
+
+        <RelativeLayout
+            android:id="@+id/mainRealtivelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <!-- Release Year -->
+
+            <TextView
+                android:id="@+id/sare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:text="A:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/answer_search_question_and_answer_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/releaseYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="Answer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/answer_search_question_and_answer_text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rqlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainRealtivelayout"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/answerby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Username"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/seprator"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#006400" >
+            </View>
+
+            <ImageView
+                android:id="@+id/rati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/star"
+                android:textColor="#4C4CD7" />
+
+            <TextView
+                android:id="@+id/ratingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/answer_search_rating_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ansratingId"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp" />
+
+    <TextView
+        android:id="@+id/answerId"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp" />
+
+</RelativeLayout>

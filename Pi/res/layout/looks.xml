@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rsc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Change Background"
+        android:textColor="@color/black"
+        android:textSize="@dimen/all_title_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.8dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="8dp"
+        android:background="#000000" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sky"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/yel"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/defult"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/hed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="C O L O R  P A L L E T E"
+        android:textColor="@color/black"
+        android:textSize="@dimen/all_title_text_size" />
+
+    <GridView
+        android:id="@+id/grid_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hed"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:columnWidth="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="10"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/lout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/grid_products"
+        android:layout_marginTop="5dp"
+        android:background="#9E9E9E" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rsc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout19"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/header" >
+
+        <ImageView
+            android:id="@+id/button38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon" />
+
+        <ImageView
+            android:id="@+id/headerProfileImage"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/ltv"
+            android:layout_toStartOf="@+id/ltv"
+            android:background="@drawable/profilepic" />
+
+        <TextView
+            android:id="@+id/ltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/button26"
+            android:layout_toStartOf="@+id/button26"
+            android:text="Ravi"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/button26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/notification" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Change Background" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.8dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:background="#000000" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usernameLinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="32dp" >
+
+        <RelativeLayout
+            android:id="@+id/r2rs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/bg2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/yelow" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/View1"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="Change to Blue" />
+
+        <ImageView
+            android:id="@+id/def"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/View1"
+            android:layout_below="@+id/View1"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/defaults" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/def"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="Set Default Background" />
+
+        <ImageView
+            android:id="@+id/View1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/bg2"
+            android:layout_below="@+id/bg2"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/blue" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/View1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:text="Change to Yellow"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sky"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/yel"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/defult"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp" />
+
+</RelativeLayout>

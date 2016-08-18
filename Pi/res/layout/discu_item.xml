@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/place"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="Q :"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/to"
+            android:layout_alignBottom="@+id/to"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="Ans :"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/to"
+            android:layout_alignParentTop="true"
+            android:text="From"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/place"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="to"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
